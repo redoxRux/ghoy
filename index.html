@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KWGWC3TG');</script>
+    <!-- End Google Tag Manager -->
+    
     <title>My GTM Test Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my test site</h1>
-    <button id="testButton">Click Me!</button>
-    <a href="#" id="testLink">Test Link</a>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWGWC3TG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <h1>Welcome to my GTM Test Site</h1>
     
-    <!-- We'll add GTM code here later -->
+    <section>
+        <h2>Test Buttons</h2>
+        <button id="testButton1" onclick="alert('Button 1 clicked!')">Button 1</button>
+        <button id="testButton2" onclick="alert('Button 2 clicked!')">Button 2</button>
+    </section>
+
+    <section>
+        <h2>Test Links</h2>
+        <a href="#" id="testLink1">Test Link 1</a><br><br>
+        <a href="#" id="testLink2">Test Link 2</a>
+    </section>
+
+    <section>
+        <h2>Test Form</h2>
+        <form id="testForm" onsubmit="event.preventDefault(); alert('Form submitted!');">
+            <input type="text" placeholder="Enter your name" id="nameInput">
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Scroll Section</h2>
+        <div style="height: 1000px; background: #f0f0f0; padding: 20px;">
+            Scroll down to trigger scroll events
+        </div>
+    </section>
 </body>
 </html>
